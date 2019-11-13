@@ -28,3 +28,7 @@ hs_err_pid*
 
 # mvn
 */target
+*/.classpath
+*/.project
+*/.settings
+.vscode/launch.json
