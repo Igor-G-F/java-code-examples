@@ -9,13 +9,14 @@ public class ObserverApplication {
 
     public static void main(String[] args) {
         HauntedPlace place = new HauntedPlace();
-        BraveHunter braveHunter = new BraveHunter(place);
+        new BraveHunter(place);
         AverageJoe averageJoe = new AverageJoe(place);
-        ScaredKid scaredKid = new ScaredKid(place);
+        new ScaredKid(place);
 
         place.setCryptid("Zombie");
         place.setCryptid("tax man");
         place.setCryptid("Man in Black");
+        place.registerObserver(averageJoe);
         place.setCryptid("Spring heeled Jack!");
     }
 }
